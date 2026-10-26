@@ -1,0 +1,5 @@
+.taste-skill/
+.vercel/
+node_modules/
+.env*
+.playwright-cli/

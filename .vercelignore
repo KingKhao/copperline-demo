@@ -1,0 +1,9 @@
+.vercel
+.env*
+.git/
+.gitignore
+.taste-skill/
+*.md
+*.log
+node_modules/
+.playwright-cli/

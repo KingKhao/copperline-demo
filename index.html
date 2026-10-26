@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Copperline Plumbing &amp; Electric | Demo site by Clinch Valley Digital</title>
+<meta name="description" content="A fictional plumbing and electrical service-call company in Rogersville, Tennessee, built as a demo by Clinch Valley Digital: live dispatch board, emergency triage, online booking, upfront price ranges and a HomeCare plan.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0e2240">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e2240'/%3E%3Cpath d='M6 20h8v-8h12' stroke='%23ffc814' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__cl)document.documentElement.classList.add("revealed")},3000)</script>
+</head>
+<body>
+<a class="vh" href="#main">Skip to content</a>
+
+<div class="demo-bar" role="note">
+  <p><b>DEMO — Example site by Clinch Valley Digital.</b> Copperline is a fictional company. Nothing on this page is saved or sent.</p>
+  <a href="https://clinchvalleydigital.com">Want one for your business?</a>
+</div>
+
+<header class="nav" id="nav">
+  <a class="mark" href="#top" aria-label="Copperline Plumbing and Electric, back to top">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6"/><path d="M6 20h8v-8h12"/></svg>
+    <span>Copperline</span>
+  </a>
+  <nav aria-label="Main">
+    <ul>
+      <li><a href="#board">Dispatch board</a></li>
+      <li><a href="#triage">What's wrong?</a></li>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#homecare">HomeCare</a></li>
+      <li><a href="#area">Service area</a></li>
+      <li><a href="#visit">Hours &amp; FAQ</a></li>
+    </ul>
+  </nav>
+  <a class="btn ghost small nav-req" href="#book">Request a tech</a>
+  <a class="btn call small" href="tel:+14235550192"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>(423) 555-0192</a>
+</header>
+
+<main id="main">
+
+<!-- HERO: the first rows of the board -->
+<section class="hero board" id="top" aria-labelledby="h1">
+  <div class="tile nameband" aria-hidden="true"><span>Copperline</span></div>
+
+  <div class="tile t-navy hero-main">
+    <h1 id="h1" class="reveal">Pipe burst? Power out?</h1>
+    <p class="statement reveal">Copperline Plumbing &amp; Electric in Rogersville, Tennessee. A real person answers day or night, and you'll see who's coming and when.</p>
+    <div class="hero-actions reveal">
+      <a class="btn call big" href="tel:+14235550192"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call now</a>
+      <a class="btn light big" href="#book">Request a tech</a>
+    </div>
+    <p class="hero-small reveal">Not sure if it can wait? <a href="#triage">Check in 30 seconds</a>.</p>
+  </div>
+
+  <figure class="tile photo hero-photo">
+    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1100&h=900&q=70" width="1100" height="900" alt="An electrician in a hard hat and gloves working on an electric meter mounted on a wall" fetchpriority="high">
+  </figure>
+
+  <a class="tile t-white teaser" href="#board" data-ui aria-label="Live dispatch board preview. Open the full board.">
+    <div class="teaser-head">
+      <span class="live"><i class="dot pulse"></i>Live board</span>
+      <span class="teaser-clock" data-clock>--:--</span>
+    </div>
+    <p class="teaser-next"><strong data-next-window>2:30–4:00 PM today</strong>is the next open arrival window.</p>
+    <ul class="teaser-rows" data-teaser></ul>
+    <span class="teaser-open">Open the board <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></span>
+  </a>
+
+  <ul class="rail" aria-label="How Copperline works">
+    <li class="tile r1"><b>Answered 24/7</b><span>A person picks up, not a voicemail box.</span></li>
+    <li class="tile r2"><b>$79 trip fee</b><span>Credited to the repair if you go ahead.</span></li>
+    <li class="tile r3"><b>Prices up front</b><span>A range before we start, never an open clock.</span></li>
+    <li class="tile r4"><b>Arrival by text</b><span>Your tech's name and a 90-minute window.</span></li>
+    <li class="tile r5"><b>Repairs, not remodels</b><span>Service calls, replacements and installs only.</span></li>
+  </ul>
+</section>
+
+<!-- DISPATCH BOARD -->
+<section class="section" id="board" aria-labelledby="board-h">
+  <div class="board board-dispatch">
+    <div class="tile t-navy dispatch-intro">
+      <h2 id="board-h" class="reveal">Who's coming when</h2>
+      <p class="reveal">This is the board our office runs on, shown to you. Every truck, where it is, and the next window we can give you.</p>
+      <p class="sample-note reveal">Sample board with demo data. It updates on its own so you can see how it works.</p>
+    </div>
+
+    <div class="tile t-yellow next-tile">
+      <strong class="next-big" data-next-window>2:30–4:00 PM today</strong>
+      <p class="next-sub">is the next open arrival window, with <span data-next-tech>Rosa, Truck 2, electrical</span>.</p>
+      <a class="btn navy" href="#book">Hold this window</a>
+    </div>
+
+    <div class="tile t-white dispatch" data-ui>
+      <div class="dispatch-top">
+        <span class="live"><i class="dot pulse"></i>Board, <span data-today>today</span></span>
+        <span class="updated" aria-live="polite" data-updated>Updated just now</span>
+      </div>
+      <table class="dtable">
+        <caption class="vh">Copperline trucks and their status (demo data)</caption>
+        <thead><tr><th scope="col">Truck</th><th scope="col">Tech</th><th scope="col">Status</th><th scope="col" class="hide-s">Job</th><th scope="col">Next free</th></tr></thead>
+        <tbody data-rows></tbody>
+      </table>
+      <ul class="legend" aria-label="Status key">
+        <li><i class="dot s-job"></i>On a job</li>
+        <li><i class="dot s-route"></i>En route</li>
+        <li><i class="dot s-soon pulse"></i>Arriving soon</li>
+        <li><i class="dot s-free"></i>Available</li>
+      </ul>
+    </div>
+
+    <div class="tile t-paper map-tile" data-ui>
+      <svg class="routemap" viewBox="0 0 600 360" role="img" aria-labelledby="map-t">
+        <title id="map-t">Route map of Hawkins County towns with the four Copperline trucks (demo)</title>
+        <g class="roads">
+          <path d="M300 180 L120 120"/><path d="M300 180 L170 285"/><path d="M300 180 L470 110"/>
+          <path d="M300 180 L520 230"/><path d="M300 180 L380 300"/><path d="M300 180 L250 50"/>
+        </g>
+        <g class="towns">
+          <g transform="translate(300 180)"><circle r="10" class="home"/><text x="16" y="-12">Rogersville</text></g>
+          <g transform="translate(120 120)"><circle r="6"/><text x="-10" y="-14">Mooresburg</text></g>
+          <g transform="translate(170 285)"><circle r="6"/><text x="-40" y="26">Bulls Gap</text></g>
+          <g transform="translate(470 110)"><circle r="6"/><text x="-40" y="-14">Surgoinsville</text></g>
+          <g transform="translate(520 230)"><circle r="6"/><text x="-70" y="26">Church Hill</text></g>
+          <g transform="translate(380 300)"><circle r="6"/><text x="10" y="26">Persia</text></g>
+          <g transform="translate(250 50)"><circle r="6"/><text x="12" y="5">Eidson</text></g>
+        </g>
+        <g data-trucks></g>
+      </svg>
+    </div>
+
+    <figure class="tile photo dispatch-photo">
+      <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=700&h=800&q=70" width="700" height="800" loading="lazy" alt="An electrician in a yellow hard hat and safety glasses standing with arms crossed beside a meter box">
+    </figure>
+
+    <div class="tile t-tile how-text">
+      <h3>The text you'll get</h3>
+      <p>When your tech leaves the last job, you get a text with their name, the truck and a 30-minute heads-up. No more waiting in all day.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE: the signature move -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Pipe burst? Power out? Call Copperline.</span><span>Pipe burst? Power out? Call Copperline.</span>
+    <span>Pipe burst? Power out? Call Copperline.</span><span>Pipe burst? Power out? Call Copperline.</span>
+  </div>
+</div>
+
+<!-- TRIAGE -->
+<section class="section" id="triage" aria-labelledby="triage-h">
+  <div class="board board-triage">
+    <div class="tile t-tile triage-intro">
+      <h2 id="triage-h" class="reveal">What's wrong?</h2>
+      <p class="reveal">Pick the problem, answer two quick questions, and see whether to call now, book for today, or schedule it.</p>
+      <p class="guide-note reveal"><b>A guide, not professional advice.</b> If you smell gas, see smoke or sparks, or water is near electricity, leave the area and call 911 or your utility first, then call us.</p>
+      <figure class="photo triage-photo"><img src="https://images.unsplash.com/photo-1620653713380-7a34b773fef8?auto=format&fit=crop&w=800&h=600&q=70" width="800" height="600" loading="lazy" alt="A hand tightening a fitting with yellow pliers on top of a white water heater tank"></figure>
+    </div>
+
+    <div class="tile t-white triage" data-ui>
+      <div class="progress" aria-hidden="true"><span data-tprogress></span></div>
+      <p class="tstep-label" data-tlabel aria-live="polite">Step 1 of 3: What's going on?</p>
+
+      <div class="tpanel" data-tpanel="pick">
+        <fieldset>
+          <legend class="vh">Choose your problem</legend>
+          <div class="problems">
+            <button type="button" class="prob" data-prob="burst"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 18h16v12H4M28 18h16v12H28"/><path d="M24 8v6M18 10l3 5M30 10l-3 5" class="y"/></svg>Burst or leaking pipe</button>
+            <button type="button" class="prob" data-prob="clog"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 10h32l-6 14H14zM24 24v16"/><circle cx="24" cy="32" r="3" class="y"/></svg>Clogged drain</button>
+            <button type="button" class="prob" data-prob="nohot"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="14" y="6" width="20" height="34" rx="4"/><path d="M20 44h8M24 16v10" class="y"/></svg>No hot water</button>
+            <button type="button" class="prob" data-prob="nopower"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M26 4 12 28h12l-2 16 14-24H24z" class="y"/><path d="M6 6l36 36"/></svg>No power</button>
+            <button type="button" class="prob" data-prob="trip"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="6" width="28" height="36" rx="3"/><path d="M18 14h12M18 22h12M18 30h6" /><path d="M30 30l4 -4" class="y"/></svg>Breaker keeps tripping</button>
+            <button type="button" class="prob" data-prob="outlet"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="8" width="28" height="32" rx="6"/><path d="M19 18v6M29 18v6M21 32h6" class="y"/></svg>Dead outlet</button>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="tpanel" data-tpanel="q" hidden>
+        <p class="tq" data-tq tabindex="-1"></p>
+        <div class="answers" data-tans></div>
+        <button type="button" class="back" data-tback>Back</button>
+      </div>
+
+      <div class="tpanel" data-tpanel="result" hidden>
+        <div class="urgency" data-urgency>
+          <p class="u-label" tabindex="-1" data-ulabel></p>
+          <div class="meter" aria-hidden="true"><span>Schedule</span><span>Today</span><span>Call now</span></div>
+        </div>
+        <p class="u-why" data-uwhy></p>
+        <div class="safe">
+          <h3>Safe first step</h3>
+          <ol data-usteps></ol>
+        </div>
+        <div class="result-actions">
+          <a class="btn call" href="tel:+14235550192" data-ucall>Call (423) 555-0192</a>
+          <a class="btn navy" href="#book" data-ubook>Request a tech</a>
+          <button type="button" class="back" data-trestart>Start over</button>
+        </div>
+        <p class="guide-small">Guide only. It can't see your home, so when in doubt, call. We'll tell you honestly if it can wait.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="section" id="book" aria-labelledby="book-h">
+  <div class="board board-book">
+    <div class="tile t-navy book-intro">
+      <h2 id="book-h" class="reveal">Book a service call</h2>
+      <p class="reveal">Our techs can't always grab the phone from under a sink. Book here any hour and the office confirms first thing, or right away for emergencies.</p>
+      <ul class="ticks reveal">
+        <li>Pick a 90-minute arrival window</li>
+        <li>Price range shown before you book</li>
+        <li>Text when your tech is on the way</li>
+      </ul>
+    </div>
+
+    <div class="tile t-white booking" data-ui>
+      <form id="bookform" novalidate>
+        <ol class="bsteps" aria-label="Booking steps">
+          <li data-bstep-dot="1" class="on">Trade</li><li data-bstep-dot="2">Problem</li><li data-bstep-dot="3">Window</li><li data-bstep-dot="4">Contact</li>
+        </ol>
+
+        <fieldset class="bpanel" data-bpanel="1">
+          <legend>What kind of call?</legend>
+          <div class="big-choice">
+            <label class="choice"><input type="radio" name="trade" value="plumbing"><span><b>Plumbing</b>Leaks, drains, water heaters, toilets, fixtures</span></label>
+            <label class="choice"><input type="radio" name="trade" value="electrical"><span><b>Electrical</b>Power, breakers, panels, outlets, lights</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="bpanel" data-bpanel="2" hidden>
+          <legend>What's the problem?</legend>
+          <div class="chips" data-bproblems></div>
+          <p class="price-hint" data-bprice aria-live="polite"></p>
+        </fieldset>
+
+        <fieldset class="bpanel" data-bpanel="3" hidden>
+          <legend>Preferred arrival window</legend>
+          <div class="windows" data-bwindows></div>
+        </fieldset>
+
+        <fieldset class="bpanel" data-bpanel="4" hidden>
+          <legend>Who should we text?</legend>
+          <div class="fields">
+            <label>Your name<input name="name" autocomplete="name" required></label>
+            <label>Mobile number<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required placeholder="(423) 555-0100"></label>
+            <label class="wide">Town<select name="town" required>
+              <option value="">Choose your town</option>
+              <option>Rogersville</option><option>Church Hill</option><option>Mount Carmel</option><option>Surgoinsville</option>
+              <option>Bulls Gap</option><option>Mooresburg</option><option>Eidson</option><option>Persia</option><option>Somewhere else</option>
+            </select></label>
+          </div>
+          <p class="form-err" data-berr role="alert"></p>
+        </fieldset>
+
+        <div class="bnav">
+          <button type="button" class="back" data-bback hidden>Back</button>
+          <button type="submit" class="btn navy" data-bnext>Next</button>
+        </div>
+      </form>
+
+      <div class="confirm" data-bconfirm hidden tabindex="-1">
+        <svg class="check-anim" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-17"/></svg>
+        <h3>You're on the board</h3>
+        <p class="ref">Job reference <strong data-bref>CL-00000</strong></p>
+        <p data-bsummary></p>
+        <p class="demo-note">This is a demo. Nothing was stored or sent, and no one is coming. On a real Copperline site, this booking would land on the dispatch board and text you a confirmation.</p>
+        <button type="button" class="back" data-breset>Book another</button>
+      </div>
+    </div>
+
+    <div class="tile t-paper phone-tile">
+      <div class="phone" aria-label="Example text messages a customer would receive" role="img">
+        <div class="phone-screen">
+          <p class="phone-from">Copperline</p>
+          <div class="bubble b1" data-sms1>Copperline: Got it. You're booked for 2:30–4:00 PM today. Ref CL-48213. Reply STOP to opt out.</div>
+          <div class="bubble b2" data-sms2>Rosa in Truck 2 is en route and should arrive in about 25 minutes.</div>
+          <div class="typing"><i></i><i></i><i></i></div>
+        </div>
+      </div>
+      <p class="phone-cap">The "tech en route" text your customer gets. Example only.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW A CALL GOES: tiles that grow -->
+<section class="section" id="how" aria-labelledby="how-h">
+  <div class="grow">
+    <h2 id="how-h" class="grow-h reveal">How a call goes</h2>
+    <div class="grow-col g1 reveal">
+      <figure class="grow-tile t-tile"><img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=600&h=500&q=70" width="600" height="500" loading="lazy" alt="A hand on a kitchen faucet with water running into a steel sink"></figure>
+      <h3>You call or book</h3>
+      <p>A person answers, or the form puts you on the board. Either way you get a window.</p>
+    </div>
+    <div class="grow-col g2 reveal">
+      <figure class="grow-tile t-navy"><img src="https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=800&h=700&q=70" width="800" height="700" loading="lazy" alt="Grey water pipes, valves and gauges running across a red brick wall"></figure>
+      <h3>We look, then quote</h3>
+      <p>The tech finds the cause and gives you the price in writing before touching a tool.</p>
+    </div>
+    <div class="grow-col g3 reveal">
+      <figure class="grow-tile t-yellow"><img src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1000&h=900&q=70" width="1000" height="900" loading="lazy" alt="An electrician in a hard hat and work gloves testing wiring at a wall-mounted meter"></figure>
+      <h3>Fixed, and cleaned up</h3>
+      <p>You only pay the price you agreed to. We sweep up, test it with you, and leave.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICES -->
+<section class="section" id="prices" aria-labelledby="prices-h">
+  <div class="board board-prices">
+    <div class="tile t-paper price-col">
+      <h2 id="prices-h" class="giant">Prices</h2>
+      <p class="price-lead">Honest ranges for our most common calls. The final price is confirmed on site, in writing, after the tech has looked. You can say no and only pay the $79 trip fee.</p>
+      <div class="bars">
+        <details open>
+          <summary>Leaks and pipes</summary>
+          <ul class="items">
+            <li><span>Leak repair, accessible pipe<small>Find the leak, cut out and replace the section, test under pressure.</small></span><b>$150–$450</b></li>
+            <li><span>Burst pipe repair<small>Same as above, plus help finding and drying wet areas.</small></span><b>$250–$700</b></li>
+            <li><span>Shut-off valve replacement<small>Main or fixture valve, new valve and fittings.</small></span><b>$180–$480</b></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Drains</summary>
+          <ul class="items">
+            <li><span>Single drain clearing<small>Sink, tub or shower. Cable the line, test the flow.</small></span><b>$125–$325</b></li>
+            <li><span>Main line clearing<small>From a cleanout. Camera look if the clog keeps coming back.</small></span><b>$250–$550</b></li>
+            <li><span>Toilet repair or reset<small>Flapper, fill valve, wax ring or a full reset.</small></span><b>$140–$380</b></li>
+          </ul>
+        </details>
+        <details open>
+          <summary>Water heaters</summary>
+          <ul class="items">
+            <li><span>Water heater repair<small>Element, thermostat, relief valve or gas control.</small></span><b>$180–$420</b></li>
+            <li><span>Tank replacement, 40–50 gallon<small>Remove old tank, install new, haul away, permit where required.</small></span><b>$1,400–$2,600</b></li>
+            <li><span>Flush and safety check<small>Drain sediment, test relief valve and anode. Free on HomeCare.</small></span><b>$129–$179</b></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Panels and breakers</summary>
+          <ul class="items">
+            <li><span>Breaker replacement<small>Diagnose the circuit, replace the breaker, test the load.</small></span><b>$180–$350</b></li>
+            <li><span>Panel replacement<small>New panel, breakers and labels. Power off for most of a day.</small></span><b>$2,200–$4,200</b></li>
+            <li><span>Whole-home surge protector<small>Installed at the panel.</small></span><b>$290–$480</b></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Outlets and switches</summary>
+          <ul class="items">
+            <li><span>Outlet or switch replacement<small>Per device. Includes GFCI where code calls for it.</small></span><b>$120–$260</b></li>
+            <li><span>New outlet on an existing circuit<small>Run, box, device and cover plate.</small></span><b>$220–$450</b></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Lighting and fans</summary>
+          <ul class="items">
+            <li><span>Light fixture install<small>Per fixture, you supply it or we do.</small></span><b>$140–$380</b></li>
+            <li><span>Ceiling fan install<small>On an existing rated box. New box adds $60–$120.</small></span><b>$180–$420</b></li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <div class="tile t-navy rates">
+      <h3>Standard or emergency</h3>
+      <table class="rate-table">
+        <caption class="vh">Standard and emergency rates compared</caption>
+        <thead><tr><th scope="col"><span class="vh">Item</span></th><th scope="col">Standard</th><th scope="col">Emergency</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">When</th><td>Mon–Fri 7–6, Sat 8–2</td><td>Nights, Sundays, holidays</td></tr>
+          <tr><th scope="row">Trip fee</th><td>$79, credited</td><td>$79, credited</td></tr>
+          <tr><th scope="row">After-hours fee</th><td>None</td><td>$125 flat</td></tr>
+          <tr><th scope="row">Repair price</th><td>Same range</td><td>Same range</td></tr>
+        </tbody>
+      </table>
+      <p>No hourly clock and no doubled rates at night. One flat fee, said out loud before we drive.</p>
+    </div>
+
+    <figure class="tile photo price-photo">
+      <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=800&h=900&q=70" width="800" height="900" loading="lazy" alt="Rows of pliers, cutters and wrenches hanging on a tool wall">
+    </figure>
+
+    <div class="tile t-yellow nope">
+      <h3>What we don't do</h3>
+      <p>No remodels, additions or new construction. If your job needs a general contractor, we'll say so on the phone and give you a name.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOMECARE -->
+<section class="section" id="homecare" aria-labelledby="hc-h">
+  <div class="board board-hc">
+    <div class="tile t-navy hc-intro">
+      <h2 id="hc-h" class="reveal">HomeCare plan</h2>
+      <p class="reveal">Water heaters, drains and panels fail on their own schedule unless someone looks at them. HomeCare means we come to you once a year, before they do.</p>
+      <ul class="checklist" data-checklist>
+        <li>Water heater flush and relief valve test</li>
+        <li>Drain check on every sink, tub and floor drain</li>
+        <li>Electrical safety check: panel, GFCIs, smoke-alarm circuits</li>
+        <li>Priority scheduling ahead of non-members</li>
+        <li>No trip fee, ever</li>
+      </ul>
+    </div>
+
+    <div class="tile t-white plans-wrap">
+      <table class="plans">
+        <caption class="vh">Compare pay-per-call with the HomeCare plans</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="plans-h">Pick a plan</th>
+            <th scope="col">Pay per call<span>$0</span></th>
+            <th scope="col" class="rec">HomeCare<span>$16<small>/month</small></span></th>
+            <th scope="col">HomeCare Plus<span>$27<small>/month</small></span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Yearly visit</th><td>Not included</td><td class="rec">One, both trades</td><td>Two, spring and fall</td></tr>
+          <tr><th scope="row">Water heaters covered</th><td>Not included</td><td class="rec">One</td><td>Up to two</td></tr>
+          <tr><th scope="row">Trip fee</th><td>$79</td><td class="rec">$0</td><td>$0</td></tr>
+          <tr><th scope="row">Repairs</th><td>Standard range</td><td class="rec">10% off</td><td>15% off</td></tr>
+          <tr><th scope="row">After-hours fee</th><td>$125</td><td class="rec">$125</td><td>Waived</td></tr>
+          <tr><th scope="row">Scheduling</th><td>Next open window</td><td class="rec">Front of the line</td><td>Front of the line</td></tr>
+          <tr class="plans-cta"><th scope="row"><span class="vh">Choose</span></th>
+            <td><a class="btn ghost-d" href="#book">Book a call</a></td>
+            <td class="rec"><button type="button" class="btn navy" data-join="HomeCare">Join HomeCare</button></td>
+            <td><button type="button" class="btn ghost-d" data-join="HomeCare Plus">Join Plus</button></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tile t-tile age-tile">
+      <h3>How old is your water heater?</h3>
+      <label class="age-label" for="age">About <output data-age-out>8</output> years old</label>
+      <input id="age" type="range" min="0" max="18" value="8" data-age>
+      <div class="age-bar" aria-hidden="true"><span data-age-bar></span></div>
+      <p class="age-say" data-age-say aria-live="polite"></p>
+      <button type="button" class="btn navy age-cta" data-join="HomeCare">Get a yearly flush with HomeCare</button>
+    </div>
+
+    <figure class="tile photo hc-photo">
+      <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=800&h=700&q=70" width="800" height="700" loading="lazy" alt="A chrome bathroom tap and hand shower over a white tub">
+    </figure>
+  </div>
+
+  <div class="dialog-wrap" data-hc-dialog hidden>
+    <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="hc-dlg-h">
+      <button type="button" class="dlg-x" data-hc-close aria-label="Close">&times;</button>
+      <form data-hc-form novalidate>
+        <h3 id="hc-dlg-h">Join <span data-hc-plan>HomeCare</span></h3>
+        <p>We'll call to set up your first visit. No payment is taken here.</p>
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Mobile number<input name="phone" type="tel" autocomplete="tel" inputmode="tel" required></label>
+        <label>Street address<input name="addr" autocomplete="street-address" required></label>
+        <p class="form-err" data-hc-err role="alert"></p>
+        <button type="submit" class="btn navy">Sign me up</button>
+      </form>
+      <div class="confirm" data-hc-done hidden tabindex="-1">
+        <svg class="check-anim" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-17"/></svg>
+        <h3>Welcome to <span data-hc-plan>HomeCare</span></h3>
+        <p>Member number <strong data-hc-ref>HC-0000</strong>. Your first visit would be booked within two weeks.</p>
+        <p class="demo-note">Demo only. Nothing was stored or sent and no payment was taken.</p>
+        <button type="button" class="btn navy" data-hc-close>Done</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="section" id="area" aria-labelledby="area-h">
+  <div class="board board-area">
+    <div class="tile t-yellow area-head">
+      <h2 id="area-h" class="reveal">Where we drive</h2>
+      <p class="reveal">About 30 minutes from Rogersville, across Hawkins County. Farther than that and we'd be late for everyone.</p>
+      <form class="town-check" data-towncheck>
+        <label for="town-in">Check your town</label>
+        <div class="tc-row">
+          <input id="town-in" list="towns" autocomplete="address-level2" placeholder="e.g. Church Hill">
+          <button class="btn navy" type="submit">Check</button>
+        </div>
+        <datalist id="towns"><option>Rogersville</option><option>Church Hill</option><option>Mount Carmel</option><option>Surgoinsville</option><option>Bulls Gap</option><option>Mooresburg</option><option>Eidson</option><option>Persia</option><option>Sneedville</option><option>Kingsport</option><option>Morristown</option></datalist>
+        <p class="tc-out" data-townout aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="tile t-navy area-map" data-ui>
+      <svg viewBox="0 0 640 420" role="img" aria-labelledby="amap-t">
+        <title id="amap-t">Map-style diagram: Rogersville at the centre, served towns inside the ring, call-first towns outside it</title>
+        <circle cx="300" cy="215" r="170" class="ring"/>
+        <circle cx="300" cy="215" r="170" class="ring-pulse"/>
+        <path class="river" d="M0 330 C120 300 200 360 320 320 S520 280 640 300"/>
+        <g class="pin home"><circle cx="300" cy="215" r="12"/><text x="320" y="210">Rogersville</text></g>
+        <g class="pin"><circle cx="445" cy="185" r="7"/><text x="456" y="180">Church Hill</text></g>
+        <g class="pin"><circle cx="425" cy="135" r="7"/><text x="390" y="118">Surgoinsville</text></g>
+        <g class="pin"><circle cx="455" cy="240" r="7"/><text x="466" y="245">Mount Carmel</text></g>
+        <g class="pin"><circle cx="175" cy="285" r="7"/><text x="100" y="310">Bulls Gap</text></g>
+        <g class="pin"><circle cx="190" cy="185" r="7"/><text x="92" y="172">Mooresburg</text></g>
+        <g class="pin"><circle cx="270" cy="95" r="7"/><text x="282" y="92">Eidson</text></g>
+        <g class="pin"><circle cx="340" cy="320" r="7"/><text x="352" y="345">Persia</text></g>
+        <g class="pin out"><circle cx="230" cy="20" r="6"/><text x="242" y="25">Sneedville, call first</text></g>
+        <g class="pin out"><circle cx="600" cy="120" r="6"/><text x="470" y="98">Kingsport, call first</text></g>
+        <g class="pin out"><circle cx="70" cy="395" r="6"/><text x="82" y="400">Morristown, call first</text></g>
+      </svg>
+    </div>
+
+    <div class="tile t-tile area-list">
+      <h3>Towns we serve</h3>
+      <ul class="towns-list">
+        <li>Rogersville</li><li>Church Hill</li><li>Mount Carmel</li><li>Surgoinsville</li><li>Bulls Gap</li><li>Mooresburg</li><li>Eidson</li><li>Persia</li>
+      </ul>
+      <p><b>Outside the ring?</b> Call before you book. For a big job we may make the drive, but we'll tell you straight if another company would get there sooner.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews" aria-labelledby="rev-h">
+  <h2 id="rev-h" class="vh">Sample reviews</h2>
+  <div class="split">
+    <div class="split-quote">
+      <p class="sample-tag">Sample reviews, written for this demo. Not real customers.</p>
+      <blockquote data-quote>
+        <p>“Our pipe let go at eleven at night. A person answered, told us where the shut-off was, and the truck was in the driveway in under an hour.”</p>
+      </blockquote>
+      <div class="rev-nav">
+        <button type="button" class="rbtn" data-rev="-1" aria-label="Previous sample review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H6M11 6l-6 6 6 6"/></svg></button>
+        <span data-revcount aria-live="polite">1 of 4</span>
+        <button type="button" class="rbtn" data-rev="1" aria-label="Next sample review"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="split-name">
+      <p class="who" data-who>Sample review<span>Burst pipe, Church Hill</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT + FAQ -->
+<section class="section" id="visit" aria-labelledby="visit-h">
+  <div class="board board-visit">
+    <div class="tile t-navy hours">
+      <h2 id="visit-h">Hours and the shop</h2>
+      <dl class="hours-list">
+        <div><dt>Mon–Fri</dt><dd>7 AM – 6 PM</dd></div>
+        <div><dt>Saturday</dt><dd>8 AM – 2 PM</dd></div>
+        <div><dt>Sunday</dt><dd>Emergencies only</dd></div>
+      </dl>
+      <p class="emerg"><i class="dot s-soon pulse"></i><span><b>Emergency line, 24/7.</b> Same number. After hours, an on-call tech answers and the $125 after-hours fee applies.</span></p>
+      <p class="open-now" data-opennow aria-live="polite"></p>
+    </div>
+
+    <div class="tile t-paper addr">
+      <h3>The shop</h3>
+      <p>77 Spring Branch Lane<br>Rogersville, TN 37857</p>
+      <p><a class="tel" href="tel:+14235550192">(423) 555-0192</a></p>
+      <p class="small">Fictional address and 555 number. Walk-ins welcome for parts questions during weekday hours.</p>
+    </div>
+
+    <div class="tile t-tile mini-map" data-ui aria-hidden="true">
+      <svg viewBox="0 0 400 260"><path class="mm-road" d="M0 150 H400"/><path class="mm-road" d="M210 0 V260"/><path class="mm-road thin" d="M0 60 L400 210"/><rect x="226" y="164" width="44" height="30" class="mm-shop"/><circle cx="248" cy="179" r="34" class="mm-ring"/><text x="280" y="214">Copperline</text><text x="12" y="140">Main St</text><text x="218" y="20">Spring Branch Ln</text></svg>
+    </div>
+
+    <div class="tile t-white serp" data-ui>
+      <h3>Found on Google</h3>
+      <p>Not just Facebook and directories. A real site gives a service company a listing it owns. This is how Copperline's page could show up in a search (example):</p>
+      <div class="serp-card" aria-label="Example search result">
+        <p class="serp-url">copperline-demo.example › emergency-plumber-rogersville</p>
+        <p class="serp-title">Emergency Plumber &amp; Electrician in Rogersville, TN | Copperline</p>
+        <p class="serp-desc">Answered 24/7. Upfront price ranges, a live arrival window, and a $79 trip fee credited to your repair. Serving Hawkins County.</p>
+      </div>
+    </div>
+
+    <div class="tile t-paper faq">
+      <h3 class="faq-h">Questions people ask</h3>
+      <details open><summary>Do you charge a call-out fee?</summary><p>Yes, $79 for the trip and diagnosis. If you go ahead with the repair, it's credited to the bill. Nights, Sundays and holidays add a flat $125 after-hours fee, which we tell you on the phone before we drive.</p></details>
+      <details><summary>How fast can you get here?</summary><p>For emergencies inside our area, usually within an hour or two. For everything else, the board above shows the next open window, often the same day. You get a text with your tech's name when they're on the way.</p></details>
+      <details><summary>Do you do remodels?</summary><p>No. We do service calls, replacements and installs: fixing a leak, swapping a water heater, adding an outlet, replacing a panel. For a new bathroom or an addition you need a general contractor, and we're happy to suggest one.</p></details>
+      <details><summary>Do you work on wells or septic systems?</summary><p>Partly. We work on the house side of a well: pressure tanks, pressure switches and the wiring to the pump. We don't drill wells, pull pumps or pump septic tanks, but we'll point you to people who do.</p></details>
+      <details><summary>Is the price on the site the price I pay?</summary><p>The site shows honest ranges. The tech confirms the exact price in writing after looking, before any work starts. If it's more than you want to spend, you only pay the trip fee.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer board">
+  <div class="tile t-paper f-state">
+    <p>Copperline Plumbing &amp; Electric. Service calls for plumbing and electrical in Rogersville and Hawkins County, Tennessee.</p>
+    <p class="legal">Copperline is a fictional business. The address and 555 phone number are made up, the board shows demo data, and the reviews are samples. Photos from Unsplash. No license, certification or award is claimed.</p>
+  </div>
+  <nav class="tile t-tile f-nav" aria-label="Footer">
+    <ul>
+      <li><a href="#board">Dispatch board</a></li><li><a href="#triage">What's wrong?</a></li><li><a href="#book">Book a call</a></li>
+      <li><a href="#prices">Prices</a></li><li><a href="#homecare">HomeCare</a></li><li><a href="#area">Service area</a></li>
+    </ul>
+  </nav>
+  <div class="tile t-tile f-time">
+    <p>Rogersville, TN</p>
+    <p class="f-clock" data-clock>--:--</p>
+    <p data-opennow-short></p>
+  </div>
+  <div class="tile t-white f-call">
+    <p>Emergency line, 24/7</p>
+    <a href="tel:+14235550192">(423) 555-0192</a>
+  </div>
+  <div class="tile t-navy f-word" aria-hidden="true"><span>Copperline</span></div>
+  <a class="tile t-yellow f-cvd" href="https://clinchvalleydigital.com">
+    <span class="f-cvd-q">Want a site like this for your business?</span>
+    <span class="f-cvd-by">Built by Clinch Valley Digital</span>
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 24h30M26 12l12 12-12 12"/></svg>
+  </a>
+</footer>
+
+<div class="mbar" aria-label="Quick actions">
+  <a class="btn call" href="tel:+14235550192"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"/></svg>Call now</a>
+  <a class="btn navy" href="#book">Request a tech</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
