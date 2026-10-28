@@ -5,7 +5,8 @@ Created October 26, 2026 for Clinch Valley Digital's "Example Sites". Relay is n
 - Static HTML, CSS and vanilla JavaScript (`index.html`, `styles.css`, `app.js`). No build step, backend, API keys, cookies or storage.
 - Search indexing is disabled (`noindex` meta tag and `X-Robots-Tag` header in `vercel.json`).
 - Every flow is a front-end mock. Nothing typed into the page is saved or sent, and each confirmation says so.
-- Not published yet: no GitHub repo or Vercel project has been created.
+- Published: https://relay-plumbing-electric-demo.vercel.app/ . Source: https://github.com/KingKhao/relay-plumbing-electric-demo . Renamed from Copperline Plumbing & Electric on October 27, 2026; the previous plumbing-demo address remains available.
+- Vercel's internal project name is still `copperline-demo`. The separate HVAC example is `copperline-heating-air-demo`; do not overwrite it when publishing this plumbing/electrical site.
 
 ## Preview in five lines
 1. Open `index.html` in a current browser (or run `python -m http.server` in this folder and open http://localhost:8000).
