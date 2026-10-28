@@ -1,6 +1,6 @@
-# Copperline Plumbing & Electric: fictional service-call sales demo
+# Relay Plumbing & Electric: fictional service-call sales demo
 
-Created October 26, 2026 for Clinch Valley Digital's "Example Sites". Copperline is not a real business.
+Created October 26, 2026 for Clinch Valley Digital's "Example Sites". Relay is not a real business.
 
 - Static HTML, CSS and vanilla JavaScript (`index.html`, `styles.css`, `app.js`). No build step, backend, API keys, cookies or storage.
 - Search indexing is disabled (`noindex` meta tag and `X-Robots-Tag` header in `vercel.json`).
@@ -15,7 +15,7 @@ Created October 26, 2026 for Clinch Valley Digital's "Example Sites". Copperline
 5. Narrow the window to phone width: the Call now / Request a tech bar stays pinned to the bottom.
 
 ## Fictional facts
-Copperline Plumbing & Electric, 77 Spring Branch Lane, Rogersville, TN 37857 (invented address), (423) 555-0192 (fictional 555 number).
+Relay Plumbing & Electric, 77 Spring Branch Lane, Rogersville, TN 37857 (invented address), (423) 555-0192 (fictional 555 number).
 Office Mon–Fri 7–6, Sat 8–2, Sunday emergencies only; emergency line 24/7. $79 trip fee credited to the repair; $125 flat after-hours fee.
 Techs Dale, Rosa, Marcus and Jen in Trucks 1–4 (demo data). Service area: Rogersville, Church Hill, Mount Carmel, Surgoinsville, Bulls Gap,
 Mooresburg, Eidson, Persia; Sneedville, Kingsport and Morristown are "call first". HomeCare $16/month, HomeCare Plus $27/month.
@@ -32,7 +32,7 @@ over headings while scrolling.
 | Problem | What the page does |
 |---|---|
 | Emergency panic | Hero leads with "Pipe burst? Power out?", a big Call now button, the 24/7 line in the hours block, and an "office open/closed" line that says the emergency line still answers |
-| Phone-only booking | Four-step booking (trade, problem, arrival window, contact) with validation and a CL- reference number; triage hands off pre-filled |
+| Phone-only booking | Four-step booking (trade, problem, arrival window, contact) with validation and a RL- reference number; triage hands off pre-filled |
 | No prices anywhere | Price ranges with what each includes, standard vs emergency table, $79 trip fee, range shown inside the booking form |
 | No visibility on arrival | Live dispatch board, route map with moving trucks, next open window, the "tech en route" text on a phone mock |
 | Emergency or can it wait? | Six-problem triage with a progress bar, urgency meter (call now / today / schedule) and safe first steps, labelled as a guide |

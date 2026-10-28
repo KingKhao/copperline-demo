@@ -1,4 +1,4 @@
-/* Copperline Plumbing & Electric — demo by Clinch Valley Digital.
+/* Relay Plumbing & Electric — demo by Clinch Valley Digital.
    Everything here is a front-end mock: nothing is stored, nothing is sent. */
 (function () {
   "use strict";
@@ -381,7 +381,7 @@
     el.textContent = m;
   }
   function confirmBooking() {
-    var ref = "CL-" + String(Math.floor(10000 + Math.random() * 89999));
+    var ref = "RL-" + String(Math.floor(10000 + Math.random() * 89999));
     var trade = form.trade.value, problem = $('input[name=problem]:checked', form).value, win = $('input[name=window]:checked', form).value;
     var name = form.name.value.trim().split(" ")[0], town = form.town.value;
     var tech = trucks.filter(function (t) { return t.trade.toLowerCase() === trade; }).sort(function (a, b) { return a.left - b.left; })[0];
@@ -390,7 +390,7 @@
       (town === "Somewhere else" ? " You're outside our usual towns, so the office would call to check before confirming." : " " + tech.tech + " in Truck " + tech.n + " would be your tech.");
     form.hidden = true;
     var c = $("[data-bconfirm]"); c.hidden = false; c.focus();
-    $("[data-sms1]").textContent = "Copperline: Thanks " + name + ", you're booked for " + win + ". Ref " + ref + ".";
+    $("[data-sms1]").textContent = "Relay: Thanks " + name + ", you're booked for " + win + ". Ref " + ref + ".";
     $("[data-sms2]").textContent = tech.tech + " in Truck " + tech.n + " is en route and should arrive in about 25 minutes.";
     playPhone(true);
   }
